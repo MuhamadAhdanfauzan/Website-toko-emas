@@ -1,0 +1,86 @@
+
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 20px;
+}
+
+
+/* Tabel Keranjang */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table th, .cart-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Header tabel */
+.cart-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Warna baris ganjil */
+.cart-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Warna baris normal */
+.cart-table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}
+
+/* Total Harga */
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Tampilan mobile */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .cart-table {
+        font-size: 14px;
+    }
+
+    .cart-table th, .cart-table td {
+        padding: 8px;
+    }
+
+    .remove-btn {
+        font-size: 12px;
+    }
+
+    .total {
+        font-size: 18px;
+    }
+}
